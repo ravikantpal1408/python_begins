@@ -4,8 +4,6 @@ class Node:
         self.next = None
 
 
-
-
 class CircularLinkedList:
     # Declaring head and tail pointer as null.
     def __init__(self):
