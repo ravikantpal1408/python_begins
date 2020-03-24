@@ -111,28 +111,30 @@ class CircularLinkedList:
 
 _obj = CircularLinkedList()
 
-while True:
-    choice = int(input("Enter your choice 👩🏻‍🎤 \n"))
-    if choice == 1:
-        input_value = input("Enter a value to add  🧙🏻 \n")
-        _obj.add(input_value)
-        print("Item added !! 🧑🏻‍💻")
+if __name__ == "__main__":
 
-    if choice == 2:
-        input_value = input("Enter item to be searched 👩🏻‍🦯 \n")
-        _obj.search(input_value)
-        pass
+    while True:
+        choice = int(input("Enter your choice 👩🏻‍🎤 \n"))
+        if choice == 1:
+            input_value = input("Enter a value to add  🧙🏻 \n")
+            _obj.add(input_value)
+            print("Item added !! 🧑🏻‍💻")
 
-    if choice == 3:
-        input_value = input("Enter item to be deleted ❌ \n")
-        _obj.delete_node(input_value)
-        pass
+        if choice == 2:
+            input_value = input("Enter item to be searched 👩🏻‍🦯 \n")
+            _obj.search(input_value)
+            pass
 
-    if choice == 4:
-        print('Displaying all content of circular linked list 🤖 \n')
-        _obj.display()
-        pass
+        if choice == 3:
+            input_value = input("Enter item to be deleted ❌ \n")
+            _obj.delete_node(input_value)
+            pass
 
-    if choice == 5:
-        print("Ok done ... Bye !! 💃🏻 \n")
-        break
+        if choice == 4:
+            print('Displaying all content of circular linked list 🤖 \n')
+            _obj.display()
+            pass
+
+        if choice == 5:
+            print("Ok done ... Bye !! 💃🏻 \n")
+            break
